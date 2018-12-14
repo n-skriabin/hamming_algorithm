@@ -25,14 +25,14 @@ namespace NewLab_01
 
             int[,] encodeIntArray = new int[inputIntArray.Length/wordLength, wordLength + checkBitsLength];
 
-            int iter = 0;
+            int iterator = 0;
 
             for (int i = 0; i < inputIntArray.Length / wordLength; i++)
             {
                 for (int j = 0; j < wordLength ; j++)
                 {
-                    encodeIntArray[i, j] = inputIntArray[iter];
-                    iter++;
+                    encodeIntArray[i, j] = inputIntArray[iterator];
+                    iterator++;
                 }
             }
 
